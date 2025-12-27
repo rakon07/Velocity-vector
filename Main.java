@@ -12,30 +12,56 @@ public class Main {
                 if (i == 1) {
                     obj1.xv = obj1.derivatex(time);
                     obj1.yv = obj1.derivatey(time);
-                    System.out.print("t = " + t + " ,(");
+                    System.out.println("Object : " + i);
+                    System.out.print("t = " + t + '\n');
+                    System.out.print("V(t) = (");
                     System.out.printf("%.2f", obj1.xv);
                     System.out.print(", ");
                     System.out.printf("%.2f", obj1.yv);
                     System.out.print(") ");
-                } else if (i == 2) {
+                    System.out.print('\n' + "Tangent Slope (m) = ");
+                    System.out.printf("%.2f", (obj1.xv / obj1.yv));
+                    System.out.print('\n' + "Tangent Equation = ");
+                    System.out.printf("y = " + "%.2f", (obj1.xv / obj1.yv));
+                    System.out.printf("x " + "%.2f", obj1.fy(time) + obj1.fx(time));
+                    System.out.print('\n');
+                }
+                else if (i == 2) {
                     obj2.xv = obj2.derivatex(time);
                     obj2.yv = obj2.derivatey(time);
-                    System.out.print("t = " + t + " ,(");
+                    System.out.println("Object : " + i);
+                    System.out.print("t = " + t + '\n');
+                    System.out.print("V(t) = (");
                     System.out.printf("%.2f", obj2.xv);
                     System.out.print(", ");
                     System.out.printf("%.2f", obj2.yv);
                     System.out.print(") ");
-                } else {
+                    System.out.print('\n' + "Tangent Slope (m) = ");
+                    System.out.printf("%.2f", (obj2.xv / obj2.yv));
+                    System.out.print('\n' + "Tangent Equation = ");
+                    System.out.printf("y = " + "%.2f", (obj2.xv / obj2.yv));
+                    System.out.printf("x " + "%.2f", obj2.fy(time) + obj2.fx(time));
+                    System.out.print('\n');
+                }
+                else {
                     obj3.xv = obj3.derivatex(time);
                     obj3.yv = obj3.derivatey(time);
-                    System.out.print("t = " + t + " ,(");
+                    System.out.println("Object : " + i);
+                    System.out.print("t = " + t + '\n');
+                    System.out.print("V(t) = (");
                     System.out.printf("%.2f", obj3.xv);
                     System.out.print(", ");
                     System.out.printf("%.2f", obj3.yv);
                     System.out.print(") ");
+                    System.out.print('\n' + "Tangent Slope (m) = ");
+                    System.out.printf("%.2f", (obj3.xv / obj3.yv));
+                    System.out.print('\n' + "Tangent Equation = ");
+                    System.out.printf("y = " + "%.2f", (obj3.xv / obj3.yv));
+                    System.out.printf("x " + "%.2f", obj3.fy(time) + obj3.fx(time));
+                    System.out.print('\n');
                 }
+                System.out.println('\n' + "--------------------------------------------------\n");
             }
-            System.out.print("\n");
         }
     }
 }
